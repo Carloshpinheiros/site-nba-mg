@@ -1,160 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>NBA MG | Produtos Oficiais</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colégio São José Escolápias</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .banner {
+      background: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .banner h1 { font-size: 3rem; font-weight: bold; }
+    .banner p { font-size: 1.5rem; }
+    .section { padding: 60px 20px; }
+    footer { background-color: #004080; color: white; padding: 30px 20px; }
+    footer a { color: #ffd700; margin: 0 10px; text-decoration: none; }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">NBA <span>MG</span></div>
-        <nav>
-            <a href="#home">Início</a>
-            <a href="#camisas">Camisas</a>
-            <a href="#bones">Bonés</a>
-            <a href="#tenis">Tênis</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home">
-            <h1 class="titulo-secao">Bem-vindo à Loja NBA MG</h1> 
-            <img src="" alt="" class="banner">
-        </section>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Colégio São José</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Educação Infantil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ensino Fundamental</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ensino Médio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Esporte e Arte</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Portal do Aluno</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <section id="camisas">
-            <h2 class="titulo-secao">Camisas de Time</h2>
-            <div class="categorias">
-                <button class="categoria-btn">Todos</button>
-                <button class="categoria-btn">Lakers</button>
-                <button class="categoria-btn">Bulls</button>
-                <button class="categoria-btn">Warriors</button>
-            </div>
-            <div class="produtos">
-                <!-- Camisa Lakers -->
-                <div class="produto">
-                <img src="Camisa Lakers Icon.jpg" alt="">
-                    <div class="produto-info">
-                        <h3 class="produto-nome">Camisa Lakers</h3>
-                        <p class="produto-preco">R$ 399,90</p>
-                        <a href="#" class="botao">Comprar</a>
-                    </div>
-                </div>
-                
-                <!-- Camisa Bulls -->
-                <div class="produto">
-                   <img src="Camisa Bulls Icon.jpg" alt="">
-                    <div class="produto-info">
-                        <h3 class="produto-nome">Camisa Bulls</h3>
-                        <p class="produto-preco">R$ 379,90</p>
-                        <a href="#" class="botao">Comprar</a>
-                    </div>
-                </div>
-                
-                <!-- Camisa Warriors -->
-                <div class="produto">
-                    <img src="Camisa Warriors Curry.webp" alt="">
-                        <h3 class="produto-nome">Camisa Warriors Curry</h3>
-                        <p class="produto-preco">R$ 429,90</p>
-                        <a href="#" class="botao">Comprar</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Novos Alunos 2026</h1>
+    <p>Faça a sua inscrição - 80 anos de tradição</p>
+    <button class="btn btn-warning btn-lg mt-3">Inscreva-se Agora</button>
+  </div>
 
+  <!-- Seções -->
+  <div class="section text-center">
+    <div class="container">
+      <h2>Educação Infantil</h2>
+      <p>Aprendizado lúdico e criativo para os primeiros anos.</p>
+      <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" class="img-fluid rounded" alt="Crianças estudando">
+    </div>
+  </div>
 
-        <section id="tenis">
-            <h2 class="titulo-secao">Tênis</h2>
-            <div class="produtos">
-                <!-- Tênis LeBron XX -->
-                <div class="produto">
-                   <img src="Tênis LeBron XX.jpg" alt="">
-                    <div class="produto-info">
-                        <h3 class="produto-nome">Tênis LeBron XX</h3>
-                        <p class="produto-preco">R$ 1.299,90</p>
-                        <a href="#" class="botao">Comprar</a>
-                    </div>
-                </div>
-                
-                <!-- Tênis Curry Flow 10 -->
-                <div class="produto">
-                   <img src="Tênis Curry 10.avif" alt="">
-                    <div class="produto-info">
-                        <h3 class="produto-nome">Tênis Curry 10</h3>
-                        <p class="produto-preco">R$ 1.199,90</p>
-                        <a href="#" class="botao">Comprar</a>
-                    </div>
-                </div>
-                
-                <!-- Tênis Jordan 37 -->
-                <div class="produto">
-                    <img src="Tênis Jordan 37.webp" alt="">
-                        <p class="produto-preco">R$ 1.499,90</p>
-                        <a href="#" class="botao">Comprar</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="bones">
-            <h2 class="titulo-secao">Bonés</h2>
-            <div class="produtos">
-                <!-- Boné Lakers -->
-                <div class="produto">
-                   <img src="Boné Lakers.webp" alt="">
-                        <h3 class="produto-nome">Boné Lakers</h3>
-                        <p class="produto-preco">R$ 199,90</p>
-                        <a href="#" class="botao">Comprar</a>
-                    </div>
-                </div>
-                
-                <!-- Boné Bulls -->
-                <div class="produto">
-                    <img src="Boné Bulls.webp" alt="">
-                        <p class="produto-preco">R$ 179,90</p>
-                        <a href="#" class="botao">Comprar</a>
-                    </div>
-                </div>
-                
-                <!-- Boné NBA -->
-                <div class="produto">
-                    <img src="Boné NBA.webp" alt="">
-                        <h3 class="produto-nome">Boné NBA</h3>
-                        <p class="produto-preco">R$ 159,90</p>
-                        <a href="#" class="botao">Comprar</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <div class="section bg-light text-center">
+    <div class="container">
+      <h2>Ensino Fundamental</h2>
+      <p>Formação sólida para o desenvolvimento integral do aluno.</p>
+      <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" class="img-fluid rounded" alt="Alunos em sala de aula">
+    </div>
+  </div>
 
-        <section id="contato" class="contato">
-            <h2 class="titulo-secao">Fale Conosco</h2>
-            <form>
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" required></textarea>
-                </div>
-                
-                <button type="submit" class="botao">Enviar Mensagem</button>
-            </form>
-        </section>
-    </main>
+  <div class="section text-center">
+    <div class="container">
+      <h2>Ensino Médio</h2>
+      <p>Preparação para vestibulares e para a vida.</p>
+      <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b" class="img-fluid rounded" alt="Estudantes do ensino médio">
+    </div>
+  </div>
 
-    <footer>
-        <p> 2025 NBA MG - Todos os direitos reservados</p>
-        <p>Carlos Henrique Pinheiro Estudante no colégio COTEMIG</p>
-    </footer>
+  <div class="section bg-light text-center">
+    <div class="container">
+      <h2>Professores</h2>
+      <p>Equipe dedicada e apaixonada pelo ensino.</p>
+      <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c" class="img-fluid rounded" alt="Professor ensinando alunos">
+    </div>
+  </div>
+
+  <div class="section text-center">
+    <div class="container">
+      <h2>Robótica</h2>
+      <p>Inovação e tecnologia para preparar os alunos para o futuro.</p>
+      <img src="https://images.unsplash.com/photo-1581090700227-4c4d1a3d3f5c" class="img-fluid rounded" alt="Aula de robótica">
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="text-center">
+    <p>Copyright © 2024 Colégio São José Escolápias</p>
+    <p>Telefone: (31) 3222-5328 | CNPJ: 22.985.832/0002-28</p>
+    <div>
+      <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">WhatsApp</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
